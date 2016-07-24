@@ -20,3 +20,4 @@ class Hex(object):
 if __name__=='__main__':
 
     setup(Hex, itertools, random)
+    print "Setup Complete!"
