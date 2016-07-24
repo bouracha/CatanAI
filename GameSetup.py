@@ -50,13 +50,16 @@ def setup(Hex, itertools, random):
             for j in range(i+1, 4):
                 diff1 = hex_array[red_array[i]].getLocation()[0] - hex_array[red_array[j]].getLocation()[0]
                 diff2 = hex_array[red_array[i]].getLocation()[1] - hex_array[red_array[j]].getLocation()[1]
-                if ((abs(diff1) < 2) and (abs(diff2 < 2))):
-                    print "Conflict between: ", hex_array[red_array[i]].getLocation(), " and ", hex_array[red_array[j]].getLocation()
+                if ((abs(diff1) < 2) and (abs(diff2) < 2)):
+                    #print "Conflict between: ", hex_array[red_array[i]].getLocation(), " and ", hex_array[red_array[j]].getLocation()
                     conflict = 1
-        print red_array
 
         if (conflict == 0):
-            print "Found configuration!\n"
+            #print "Found configuration!"
+            #for i in range(4):
+                #print hex_array[red_array[i]].getLocation()
             break
+
+    return
 
 
